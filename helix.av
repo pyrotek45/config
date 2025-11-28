@@ -1,11 +1,11 @@
 # Generate Helix editor configuration file from Avon
 # Demonstrates generating TOML config files
 
-let theme = "dark_plus" in
-let insert_shape = "bar" in
-let normal_shape = "block" in
-let select_shape = "underline" in
-let c_space_key = "normal_mode" in
+\theme ? "dark_plus"
+\insert_shape ? "bar"
+\normal_shape ? "block"
+\select_shape ? "underline"
+\c_space_key  ? "normal_mode"
 
 @.config/helix/config.toml {"
     theme = "{theme}"
